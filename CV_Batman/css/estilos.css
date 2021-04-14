@@ -1,0 +1,57 @@
+/**** estilos generales ****/
+body {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+/**** header ****/
+header {
+    background-color: #DDDDDD;
+    text-align: center;
+}
+
+/**** títulos ****/
+h1 {
+    color: #283F65;
+    text-align: center;
+}
+
+h2 {
+    color: #794a38;
+    font-size: 18px;   
+}
+
+h1, h2 {
+background-color: #BFBFBF;
+text-transform: uppercase;
+letter-spacing: 0.25em; /*separación entre letras de una palabra*/
+word-spacing: 0.5em; /*separación entre palabras*/
+}
+
+/***** secciones *****/
+section {
+margin-left: 20%;
+margin-right: 20%;
+}
+
+ul {
+    text-transform: uppercase;
+}
+
+span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/**** footer ****/
+footer {
+    background-color: #1F497D;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+}
+
+.imgFooter {
+    width: 18px;
+    height: 18px;
+}
+
