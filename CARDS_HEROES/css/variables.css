@@ -1,0 +1,17 @@
+:root{
+    --mainColor : #00669F;
+    --secondaryColor: #1CD1B0;
+    --menuColor: #001D2D;
+    --titleFormColor: #333333;
+    --blackColor: #000000;
+    --colorResetButton: #888888;
+    --navColor: #001D2D;
+    --detailsHero: #2C0187;
+
+    --mainFont: 'Roboto', sans-serif;
+    --fontForm: 'Karla', sans-serif;
+    --titleFormFont: 'Inter', sans-serif;
+
+    --baseWidth: 350px;
+
+}

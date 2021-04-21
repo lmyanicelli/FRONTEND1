@@ -1,0 +1,62 @@
+/*Heroes*/
+
+.bg-hero{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title-hero{
+    font-size: 24px;
+    padding: 15px;
+    padding-top: 70px;
+    color: var(--detailsHero);
+    text-decoration: underline;
+    font-weight: 400;
+}
+.description-hero{
+    text-align: left;
+}
+.description-hero > span{
+    color: var(--detailsHero);
+}
+
+.card-hero{    
+        background: #F3F3F3;
+        border-radius: 40px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: var(--mainFont);
+        font-weight: 400;
+        height: 480px;
+        margin: auto;
+        margin-top: 100px;
+        padding: 25px; 
+        position: relative; 
+        text-align: center;
+        width: 550px;
+}
+
+.hero-weapons{
+    padding: 20px;
+}
+
+.button-home{
+background-color:var(--detailsHero);
+text-decoration: none;
+color: #F3F3F3;
+display: inline-block;
+font-size: 18px;
+width: 100%;
+padding: 30px;
+border-bottom-left-radius: 40px;
+border-bottom-right-radius: 40px;
+position: absolute;
+bottom: 0px;
+left: 0px;
+
+}
+
+.img-position-hero{
+    left: 200px;
+}

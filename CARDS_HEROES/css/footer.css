@@ -1,0 +1,10 @@
+footer{
+    background: var(--mainColor);
+    color: #FFF9F9;
+    font-family: var(--mainFont);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+}

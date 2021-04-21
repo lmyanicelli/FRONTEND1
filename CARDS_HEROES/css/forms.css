@@ -1,0 +1,69 @@
+/**formularios**/
+.height-main{
+    height: 80vh;
+}
+
+.forms{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+
+    font-family: var(--fontForm);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+.forms h2{
+    color: #333333;
+    font-family: var(--titleFormFont);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    text-align: left;
+}
+
+.forms input,
+select, textarea{
+margin-top: 10px;
+margin-bottom: 10px;
+width: 100%;
+padding: 10px;
+resize: none;
+}
+
+.form-button{
+    border: var(--secondaryColor);
+    font-size: 22px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--secondaryColor);
+    border-radius: 23px;
+    color: var(--blackColor);
+    font-weight: 700;
+}
+
+.forms input.medium-size-button{
+    width: 49%;
+}
+
+
+.reset-button{
+    background-color: var(--colorResetButton);
+    color: #FFFFFF;
+}
+
+.link-form{
+    text-decoration: none;
+    color: var(--blackColor);
+}
+
+.link-form span{
+    color: #00669F;
+}
