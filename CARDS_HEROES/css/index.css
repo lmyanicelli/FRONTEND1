@@ -11,12 +11,13 @@ section{
 /***Main***/
 
 .card {
+    display: inline-block;
+    font-family: var(--mainFont);
+    font-weight: 400;
     margin: auto;
     margin: 25px;
     width: var(--baseWidth);
-    font-family: var(--mainFont);
-    font-weight: 400;
-    display: inline-block;
+    transform: scale(0.8);
 }
 
 .card h2{
@@ -54,11 +55,10 @@ section{
     border-radius: 50%;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     height: 150px;
-    width: 150px;
-
+    left: 100px;
     position: absolute;
     top: -75px;
-    left: 100px;
+    width: 150px;
     z-index: 5;
 }
 
@@ -79,8 +79,8 @@ section{
 .heart{  
     color: #CC2424;
     font-size: 30px;
-    position: absolute;
     left: 25px;
+    position: absolute;
     top: 20px;
 }
 
@@ -111,9 +111,24 @@ section{
     padding: 10px;
     text-align: center;
     width: 50px;
+}
 
-    position: fixed;
+.fixed-button{
     bottom: 30%;
+    position: fixed;
     right: 2%;
     z-index: 15;
+}
+
+.add-button:hover{
+    background: var(--colorInteractionButton);   
+}
+
+/*Para sacar la linea del input cuando hace clic el usuario*/
+input {
+    outline: none;
+}
+
+.card:hover{
+    transform: scale(1);
 }

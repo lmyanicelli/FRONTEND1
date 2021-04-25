@@ -4,15 +4,14 @@
 }
 
 .forms{
-    width: 500px;
-    margin: auto;
-    text-align: center;
-
     font-family: var(--fontForm);
+    font-size: 15px;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
     line-height: 25px;
+    margin: auto;
+    text-align: center;
+    width: 500px;
 }
 
 
@@ -29,24 +28,25 @@
 }
 
 .forms input,
-select, textarea{
-margin-top: 10px;
-margin-bottom: 10px;
-width: 100%;
-padding: 10px;
-resize: none;
+.forms select, 
+.forms textarea {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    resize: none;
+    width: 100%;
 }
 
 .form-button{
+    background-color: var(--secondaryColor);
+    border-radius: 23px;
     border: var(--secondaryColor);
+    color: var(--blackColor);
     font-size: 22px;
+    font-weight: 700;
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    background-color: var(--secondaryColor);
-    border-radius: 23px;
-    color: var(--blackColor);
-    font-weight: 700;
 }
 
 .forms input.medium-size-button{
@@ -60,8 +60,8 @@ resize: none;
 }
 
 .link-form{
-    text-decoration: none;
     color: var(--blackColor);
+    text-decoration: none;
 }
 
 .link-form span{

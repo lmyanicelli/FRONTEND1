@@ -14,4 +14,11 @@
 
     --baseWidth: 350px;
 
+    /*colores para interacción*/
+    --colorInteractionButton: #001D2D;
+    --colorInteractionInput:  #AFF9FE;
+    --colorInteractionCheckBox: #34CEFF;
+    --colorInteractionCheckRadio:  #4DD1FB;
+
+
 }

@@ -1,0 +1,158 @@
+.main-box{
+    background-color: var(--mainColor);
+    border-radius: 20px;
+    color: white;
+    font-family: var(--titleFormFont);
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    width: 800px;
+}
+
+.main-box >h3{
+    font-size: 40px;
+    padding: 15px;
+}
+
+.main-box >p{
+    font-size: 20px;
+    padding: 5px;
+}
+
+/*Columnas*/
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px; /*espacio entre las columnas*/
+    padding: 15px;
+}
+
+.grid .column1{
+    grid-column: 1 / 2;
+}
+
+.grid .column2{
+    grid-column: 2 / 3;
+}
+
+.grid hr{
+    margin: 15px 1px;
+}
+
+.grid input, 
+.grid select,
+.grid textarea{
+border-radius: 10px;
+border: none;
+margin-bottom: 10px;
+margin-top: 10px;
+padding: 10px;
+resize: none;
+width: 100%;
+}
+
+.grid input:focus{
+background-color: var(--colorInteractionInput);
+}
+
+.grid input[type="text"]:valid,
+.grid input[type="date"]:valid{
+    border: 1px solid #71FF40;
+}
+
+.grid input[type="text"]:invalid,
+.grid input[type="date"]:invalid{
+    border: 1px solid #FF0000;
+}
+
+.field-title{
+    font-size: 15px;
+    padding: 10px 5px; 
+}
+
+.text-grid{
+    font-weight: 300;
+    text-align: left;
+}
+
+
+/*checkbox 
+https://programacion.net/articulo/como_personalizar_checkboxes_y_botones_de_radio_con_css_1989*/
+
+.option-value{
+    font-size: 15px;
+    height: 20px;
+    margin: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.option-value input[type="checkbox"],
+.option-value input[type="radio"] {
+	visibility: hidden; /*oculto checkbox original*/
+}
+
+.option-value .check-box{
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    height: 18px;
+    left: 0;
+    position: absolute;
+    top: 0px;
+    width: 20px;
+}
+
+.option-value input[type="checkbox"]:checked ~ .check-box{
+    background-color: var(--colorInteractionCheckRadio);        
+}
+
+.option-value input[type="checkbox"]:checked ~ .check-box::after{
+    content: url(../img/check.svg);
+    padding-left: 2px;    
+    transform: scale(0.8);    
+}
+
+/*Radio Button*/
+.option-value input[type="radio"]:checked ~ .check-radio{
+    background-color: var(--colorInteractionCheckRadio);
+}
+
+.option-value .check-radio{
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    height: 18px;
+    left: 0;
+    position: absolute;
+    top: 0px;
+    width: 18px;
+}
+
+.option-value input[type="radio"]:checked ~ .check-radio{
+    background-color: var(--colorInteractionCheckRadio);
+}
+
+
+/*Button Add*/
+form > input.form-add-button{
+        background-color: var(--secondaryColor);
+        border-radius: 23px;
+        border: var(--secondaryColor);
+        color: var(--blackColor);
+        font-size: 40px;
+        font-weight: 700;
+        padding: 10px;
+        text-align: center;
+        grid-column: 1 / 3;
+        margin: auto;
+        text-align: center;
+        width: 60%;
+}
+
+form > input.form-add-button:hover{
+    background-color: var(--colorInteractionButton);
+    color:#fff;
+}

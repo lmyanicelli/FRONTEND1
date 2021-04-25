@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+
+    </header>
+
+    <main>
+<section>
+
+    <div>
+        <h3>Login</h3>
+
+        <form action="#" method="POST">
+<fieldset>
+    <legend>Datos personales</legend>
+
+    <label for="nombre">Nombre y apellido (Obligatorio)</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Juan Perez" minlength="5" maxlength="25" required>
+
+    <label for="tel">Tel</label>
+    <input type="tel" id="tel" name="tel" placeholder="123-90122" pattern="[0-9]{3}-[0-9]{5}"> <!--le estoy indicando que necesito números del 0-9, pero solo 3 y despues numeros del 0-9 pero solo 5-->
+
+    <!--NAME IGUAL PARA TODOS EN EL RADIO-->
+    <p>Tipo de Documento</p>
+    <input type="radio" id="documento1" name="documento" value="DNI">
+    <label for="documento1" name="documento">DNI</label>
+    <input type="radio" id="documento2" name="documento" value="CUIL">
+    <label for="documento2" name="documento">CUIL</label>
+    <input type="radio" id="documento3" name="documento" value="CUIT">
+    <label for="documento3" name="documento">CUIT</label>
+
+
+    <label for="doc">Imagen Documento</label>
+    <input type="file" id="doc" accept=".jpg, .pdf, .png" name="doc" multiple>
+
+    <label for="nacimiento">Fecha de Nacimiento</label>
+    <input type="date" id="nacimiento" name="nacimiento" min="2018-01-01" max="2020-02-02">
+
+</fieldset>
+<fieldset>
+    <legend>Lenguajes</legend>
+<!--Checkbox-->
+    <p>Seleccione los lenguajes que conoce</p>
+    <input type="checkbox" id="lenguaje1" name="lenguaje" value="HTML">
+    <label for="html"></label>
+</fieldset>
+
+<fieldset>
+    <legend>Trabajo</legend>
+
+    <label for="modalidad-trabajo"></label>
+    <input type="select">
+    <optgroup label="Modalidad">
+        <option value=""></option>
+
+    </optgroup>
+
+</fieldset>
+
+<input type="checkbox" name="terminos" required>
+<label for="terminos">Terminos y condiciones</label>
+
+<input type="reset" value="Resetear">
+<input type="submit" value="Enviar">
+
+<hr> <!--linea-->
+
+        </form>
+    </div>
+</section>
+
+
+<h3>
+
+</h3>
+
+<p>
+
+</p>
+
+<form action="">
+<div></div>
+
+<div></div>
+    <input type="text">
+</form>
+
+tabindex 1 nombre
+2 especie
+3 fecha
+    </main>
+    
+</body>
+</html>

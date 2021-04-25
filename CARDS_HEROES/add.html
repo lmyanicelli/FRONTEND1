@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Card Super Heroes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="anuncio">
+        <p>20% de descuento en todos los productos!</p>
+    </div>
+    <!--Header-->
+    <header>
+        <img class="logo" src="img/logo.svg" alt="logo">
+        <h1>Nombre Tienda</h1>
+        <nav>
+            <a href="contacto.html">Contacto</a>
+            <a href="registro.html">Registrarme</a>
+            <a href="login.html">Ingresar</a>
+        </nav>
+    </header>
+
+    <!--Main-->
+    <main>
+        <section>
+
+            <div class="main-box">
+                <h3>Añadí tu super!</h3>
+                <p>Agregá tu personaje favorito completando las opciones.</p>
+
+                <!--Form-->
+                <form class="grid text-grid" action="index.html" method="GET">
+
+                    <!--Column 1-->
+                    <div class="column1">
+                        <label class="field-title" for="nombre">*Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Gabriela" required tabindex="0">
+
+                        <label class="field-title" for="fecha">Fecha</label>
+                        <input type="date" id="fecha" name="fecha" required>
+
+                        <textarea name="descripcion" id="descripcion" name="descripcion" cols="30" rows="15"></textarea>
+
+                    </div>
+
+                    <!--Column 2-->
+                    <div class="column2">
+                        <label class="field-title" for="especie">*Especie</label>
+                        <select name="especie" id="especie" required>
+                            <option disabled selected tabindex="1">Unknow</option>
+                            <option value="humano" tabindex="2">Humano</option>
+                            <option value="alienigena" tabindex="3">Alienigena</option>
+                        </select>
+
+                        <label class="field-title" for="foto">Agregar foto</label>
+                        <input type="file" name="foto" id="foto" accept=".pdf, .jpg., .png">
+
+                        <!--Checkbox-->
+                        <p class=".field-title">Poderes</p>
+                        <div class="option-value">
+                            <label for="volar">Volar
+                                <input type="checkbox" name="poderes" id="volar" value="volar">
+                                <span class="check-box"></span>
+                            </label>
+                        </div>
+                        <div class="option-value">
+                            <label for="Superinteligencia">Superinteligencia
+                                <input type="checkbox" name="poderes" id="Superinteligencia" value="Superinteligencia">
+                                <span class="check-box"></span>
+                            </label>
+
+                        </div>
+                        <div class="option-value">
+                            <label for="vista">Vista de rayo láser
+                                <input type="checkbox" name="poderes" id="vista" value="vista">
+                                <span class="check-box"></span>
+                            </label>
+                        </div>
+                        <div class="option-value">
+                            <label for="billetera">Billetera gorda
+                                <input type="checkbox" name="poderes" id="billetera" value="billetera">
+                                <span class="check-box"></span>
+                            </label>
+                        </div>
+
+                        <!--linea-->
+                        <hr>
+
+                        <!--Radio Button-->
+                        <p class=".field-title">Tipo de personaje</p>
+                        <div class="option-value">
+                            <label for="heroe" name="personaje">Héroe / Heroina
+                                <input type="radio" id="heroe" name="personaje" value="Héroe / Heroina">
+                                <span class="check-radio"></span>
+                            </label>
+                        </div>
+                        <div class="option-value">
+                            <label for="villano" name="personaje">Villano / Villana
+                                <input type="radio" id="villano" name="personaje" value="Villano / Villana">
+                                <span class="check-radio"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--Add button-->
+                    <input class="form-add-button" type="submit" value="Añadir">
+
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+
+</html>

@@ -8,12 +8,12 @@
 }
 
 .title-hero{
+    color: var(--detailsHero);
     font-size: 24px;
+    font-weight: 400;
     padding: 15px;
     padding-top: 70px;
-    color: var(--detailsHero);
     text-decoration: underline;
-    font-weight: 400;
 }
 .description-hero{
     text-align: left;
@@ -42,18 +42,18 @@
 }
 
 .button-home{
-background-color:var(--detailsHero);
-text-decoration: none;
-color: #F3F3F3;
-display: inline-block;
-font-size: 18px;
-width: 100%;
-padding: 30px;
-border-bottom-left-radius: 40px;
-border-bottom-right-radius: 40px;
-position: absolute;
-bottom: 0px;
-left: 0px;
+    background-color:var(--detailsHero);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    bottom: 0px;
+    color: #F3F3F3;
+    display: inline-block;
+    font-size: 18px;
+    left: 0px;
+    padding: 30px;
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
 
 }
 

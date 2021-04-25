@@ -4,11 +4,11 @@
     background: var(--secondaryColor);
     box-sizing: content-box;
     color: #000000;
+    font-family: var(--mainFont);
     font-size: 24;
+    font-weight: 400;
     line-height: 28px;
     padding-left: 32px;
-    font-family: var(--mainFont);
-    font-weight: 400;
 }
    
 /**Header**/
@@ -16,43 +16,41 @@
 header {
     background: var(--mainColor);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: var(--mainFont);
+    font-weight: 400;
     position: sticky;
     top: 0px;
     z-index: 999;
-    font-family: var(--mainFont);
-    font-weight: 400;
-    
 }
 
 .logo{
-    /* width: 80px; */
-   height:60px; 
    display: inline-block;
+   height:60px; 
    width: 100px;
 }
 
 h1 {
     box-sizing: content-box;
     color: #FFFFFF;  
-    font-size: 36px;
     display: inline-block;
-    justify-content: center;
+    font-size: 36px;
     font-weight: 400;
+    justify-content: center;
 }
 
 nav{
-    text-align: right;
     background-color: var(--navColor);
-   padding: 10px;
-}
-
-nav > a{
-    text-decoration: none;
-    color: #FFFFFF;
+    text-align: right;
     padding: 10px;
 }
 
+nav > a{
+    color: #FFFFFF;
+    padding: 10px;
+    text-decoration: none;
+}
+
 .title-page-hero{
-    padding-left: 32px;
     font-size: 48px;
+    padding-left: 32px;
 }
