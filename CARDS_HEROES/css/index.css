@@ -14,10 +14,16 @@ section{
     display: inline-block;
     font-family: var(--mainFont);
     font-weight: 400;
-    margin: auto;
     margin: 25px;
-    width: var(--baseWidth);
+    margin: auto;
     transform: scale(0.8);
+    transition: all 450ms;
+    width: var(--baseWidth);
+}
+
+/*Animación card*/
+.card:hover{
+    transform: scale(1);
 }
 
 .card h2{
@@ -110,6 +116,7 @@ section{
     font-size: 33px;
     padding: 10px;
     text-align: center;
+    transition: all 450ms;
     width: 50px;
 }
 
@@ -129,6 +136,3 @@ input {
     outline: none;
 }
 
-.card:hover{
-    transform: scale(1);
-}

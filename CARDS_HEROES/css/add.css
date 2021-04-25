@@ -102,6 +102,7 @@ https://programacion.net/articulo/como_personalizar_checkboxes_y_botones_de_radi
     left: 0;
     position: absolute;
     top: 0px;
+    transition: all 450ms;
     width: 20px;
 }
 
@@ -128,6 +129,7 @@ https://programacion.net/articulo/como_personalizar_checkboxes_y_botones_de_radi
     left: 0;
     position: absolute;
     top: 0px;
+    transition: all 450ms;
     width: 18px;
 }
 
@@ -150,6 +152,7 @@ form > input.form-add-button{
         margin: auto;
         text-align: center;
         width: 60%;
+        transition: all 600ms;
 }
 
 form > input.form-add-button:hover{
