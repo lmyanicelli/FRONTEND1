@@ -10,3 +10,6 @@ https://lmyanicelli.github.io/FRONTEND1/CV_Batman/
 
 3. Proyecto Card Super Heroes:
 https://lmyanicelli.github.io/FRONTEND1/CARDS_HEROES/
+
+4. Proyecto Animaciones
+https://lmyanicelli.github.io/FRONTEND1/Animaciones_clase12
