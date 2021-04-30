@@ -2,14 +2,17 @@
 
 Proyectos de la materia FRONT END 1 de la carrera Certified Tech Developer
 
-1. Proyecto Lemon Pie:
-https://lmyanicelli.github.io/FRONTEND1/LEMON_PIE/
+1. Proyecto Receta Lemon Pie:
+https://lmyanicelli.github.io/FrontEnd1/RecetaLemonPie/
 
 2. Proyecto CV Batman:
-https://lmyanicelli.github.io/FRONTEND1/CV_Batman/
+https://lmyanicelli.github.io/FrontEnd1/CVBatman/
 
 3. Proyecto Card Super Heroes:
-https://lmyanicelli.github.io/FRONTEND1/CARDS_HEROES/
+https://lmyanicelli.github.io/FrontEnd1/CardsHeroes/
 
 4. Proyecto Animaciones
-https://lmyanicelli.github.io/FRONTEND1/Animaciones_clase12
+https://lmyanicelli.github.io/FrontEnd1/Animaciones/
+
+5. Proyecto Responsive
+https://lmyanicelli.github.io/FrontEnd1/Responsive
