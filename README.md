@@ -16,3 +16,6 @@ https://lmyanicelli.github.io/FrontEnd1/Animaciones/
 
 5. Proyecto Responsive
 https://lmyanicelli.github.io/FrontEnd1/Responsive
+
+6. Proyecto Flex
+https://lmyanicelli.github.io/FrontEnd1/Flex
