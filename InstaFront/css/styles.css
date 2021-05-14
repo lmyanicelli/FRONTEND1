@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto&display=swap');
+
+:root{
+    --colorFooter: #222222;
+    --colorBackground: #FAFAFA;
+    --colorFontLinks: #1CA0F6;
+    --colorFontGrey: #808080;
+    --widthPhoto: 488px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+header, footer{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: solid 1px var(--colorFontGrey);
+}
+header .search{
+    display: none;
+}
+.img-profile{
+    border-radius: 50%;
+}
+header form input{
+    background-color: var(--colorBackground);
+    border-radius: 5px;
+    border: solid 1px var(--colorFontGrey);
+    width: 25vw;
+    padding: 5px;
+}
+
+/*Main*/
+.grid-container{
+    display: grid;
+    grid-template-areas: "history suggestions"
+                        "post suggestions";
+    grid-row-gap: 40px;
+    grid-column-gap: 100px;
+    background-color: var(--colorBackground);
+    padding: 15px;
+}
+
+/**History**/
+.history{
+    grid-area: history;
+    display: flex;
+    padding: 20px 30px;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+/**Post**/
+.post{
+    grid-area: post;
+}
+
+.history,
+.post{
+    justify-self: center;
+    background-color: white;
+    border: solid 1px var(--colorFontGrey);
+    border-radius: 5px;
+    width: 600px;
+}
+
+.header-post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.header-post div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.body-post{
+    padding: 20px 56px;
+}
+.body-post .icons{
+    font-size: 1.5em;
+}
+.body-post .icons i{
+    transition: all 450ms;
+}
+.body-post .icons i:hover{
+    color: red;
+}
+
+.body-post .comments p,
+.body-post .comments h6{
+    font-size: 0.8em;
+    font-weight: 400;
+    padding: 5px;
+}
+.body-post .comments h6{
+    color: var(--colorFontGrey);
+}
+.body-post .comments span{
+    font-weight: bold;
+}
+
+/*Animaciones img-profile*/
+.img-profile{
+    transition: all 450ms;
+}
+.img-profile:hover{
+    transform: scale(1.2);
+}
+
+/**Suggestions**/
+.suggestions{
+    grid-area: suggestions;
+    max-width: 300px;
+}
+.suggestions .container-1{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+    padding: 35px 10px;
+}
+.suggestions .container-1 .button{
+    justify-self: start;
+}
+
+.suggestions .container-2{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+.suggestions .container-2 h6{
+    color: var(--colorFontGrey);
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.suggestions .container-2 .friends{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+}
+.suggestions .container-2 .friends img{
+    transform: scale(0.7);
+}
+.suggestions .button{
+    text-decoration: none;
+    color: var(--colorFontLinks);
+    justify-self: start;
+}
+
+/*Animaciones .button*/
+.button{
+    transition: all 450ms;
+}
+.button:hover{
+    font-weight: bold;
+}
+
+/*Footer*/
+footer{
+    background-color: var(--colorFooter);
+    text-align: center;
+    color: var(--colorBackground);
+    padding: 10px;
+}
+
+/*Responsive*/
+@media screen and (max-width: 768px) {
+    .img-desktop{
+        display: none; /*elimino algunos perfiles*/
+    }
+    .history, .post{
+        max-width: 95vw;
+        margin: 15px;
+    }
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px;
+        gap: 20px;
+        min-height: 90vh;
+    }
+    .body-post{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+    .body-post p{
+        text-align: left;
+    }
+    .suggestions{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    header form input{
+        display: none; /*elimino buscador*/
+    }
+    header{
+        justify-content: space-between;
+    }
+    main{
+        padding: 0px;
+    }
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px;
+        gap: 20px;
+    }
+    .img-desktop, 
+    .img-tablet{
+        display: none;/**elimino algunos perfiles de las historias**/
+    }
+    .suggestions{
+        display: none;/**oculto suggestions**/
+    }
+    .history, .post{
+        max-width: 95vw;
+        margin: 15px;
+    }
+    .body-post{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 5px 20px;
+    }
+    .body-post img{
+        max-width: 80vw;
+        align-self: center;
+    }
+    footer{
+        font-size: 0.5em;
+    }
+
+}
