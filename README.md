@@ -19,3 +19,7 @@ https://lmyanicelli.github.io/FrontEnd1/Responsive
 
 6. Proyecto Flex
 https://lmyanicelli.github.io/FrontEnd1/Flex
+
+6. Proyecto Grid - InstaFront
+https://lmyanicelli.github.io/FrontEnd1/InstaFront
+
